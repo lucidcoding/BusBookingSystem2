@@ -1,0 +1,53 @@
+﻿<section id="main">
+    <form ng-submit="submit()">
+        <h1>Booking</h1>
+        <p>
+            <input type="hidden" id="bookingId" ng-model="id" /><br />
+            Start Date: <input type="text" id="startDate" ng-model="startDate" /><br />
+            End Date: <input type="text" id="endDate" ng-model="endDate" /><br />
+            Bus: <select ng-model="bus" ng-options="bus.Name for bus in busses track by bus.Id"></select><br />
+            Destination:<input type="text" id="destination" ng-model="destination" /><br />
+            <b>Total Cost:</b>£<br />
+        </p>
+
+        <h2>Customers</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        First Name
+                    </th>
+                    <th>
+                        Surname
+                    </th>
+                    <th>
+                        Driving Licence Number
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="customer in customers">
+                    <td>
+                        {{customer.FirstName}}
+                    </td>
+                    <td>
+                        {{customer.Surname}}
+                    </td>
+                    <td>
+                        {{customer.DrivingLicenceNumber}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <fieldset>
+            <legend>New Customer</legend>
+            First Name: <input type="text" id="newCustomerFirstName" ng-model="newCustomerFirstName" /><br />
+            Surname: <input type="text" id="newCustomerSurname" ng-model="newCustomerSurname" /><br />
+            Driving Licence Number: <input type="text" id="drivingLicenceNumber" ng-model="drivingLicenceNumber" /><br />
+            <input type="button" ng-click="addCustomer()">Add Customer</button>
+        </fieldset>
+        <input type="submit" value="Submit" />
+        <a href="#/booking/index">Back to list</a>
+    </form>
+</section>

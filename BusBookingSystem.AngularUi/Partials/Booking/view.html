@@ -1,0 +1,42 @@
+﻿<section id="main">
+    <h1>Booking</h1>
+    <p>
+        <b>Start Date:</b>{{booking.StartDate}}<br />
+        <b>End Date:</b>{{booking.EndDate}}<br />
+        <b>Bus:</b>{{booking.Bus.Name}}<br />
+        <b>Destination:</b>{{booking.Destination}}<br />
+        <b>Total Cost:</b>£{{booking.TotalCost}}<br />
+    </p>
+
+    <h2>Customers</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Surname
+                </th>
+                <th>
+                    Driving Licence Number
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="customer in booking.Customers">
+                <td>
+                    {{customer.FirstName}}
+                </td>
+                <td>
+                    {{customer.Surname}}
+                </td>
+                <td>
+                    {{customer.DrivingLicenceNumber}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#/booking/index">Back to list</a>
+</section>

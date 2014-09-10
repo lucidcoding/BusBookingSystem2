@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystem.Domain", "BusBookingSystem.Domain\BusBookingSystem.Domain.csproj", "{4D24ED31-7B88-45D5-BCF4-C99B9D885244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystem.Data.Tests", "BusBookingSystem.Data.Tests\BusBookingSystem.Data.Tests.csproj", "{F2C66690-A2FF-4110-8353-908EF4674D10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00A80A27-99A6-4EFA-BAD2-EAB11EA02725}"
+	ProjectSection(SolutionItems) = preProject
+		BusBookingSystem.vsmdi = BusBookingSystem.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystem.Data", "BusBookingSystem.Data\BusBookingSystem.Data.csproj", "{B3C6755D-F307-48C1-BEB4-D9CE89A580FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystem.WebApi", "BusBookingSystem.WebApi\BusBookingSystem.WebApi.csproj", "{E07F0A94-3F36-43A3-81F6-7D8BFCA5F2D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusBookingSystem.AngularUi", "BusBookingSystem.AngularUi\BusBookingSystem.AngularUi.csproj", "{F0B668C5-2AFB-49EB-BF5B-B70F3D3578B1}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = BusBookingSystem.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D24ED31-7B88-45D5-BCF4-C99B9D885244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D24ED31-7B88-45D5-BCF4-C99B9D885244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D24ED31-7B88-45D5-BCF4-C99B9D885244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D24ED31-7B88-45D5-BCF4-C99B9D885244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C66690-A2FF-4110-8353-908EF4674D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C66690-A2FF-4110-8353-908EF4674D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C66690-A2FF-4110-8353-908EF4674D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C66690-A2FF-4110-8353-908EF4674D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C6755D-F307-48C1-BEB4-D9CE89A580FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C6755D-F307-48C1-BEB4-D9CE89A580FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C6755D-F307-48C1-BEB4-D9CE89A580FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C6755D-F307-48C1-BEB4-D9CE89A580FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07F0A94-3F36-43A3-81F6-7D8BFCA5F2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07F0A94-3F36-43A3-81F6-7D8BFCA5F2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07F0A94-3F36-43A3-81F6-7D8BFCA5F2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07F0A94-3F36-43A3-81F6-7D8BFCA5F2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B668C5-2AFB-49EB-BF5B-B70F3D3578B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B668C5-2AFB-49EB-BF5B-B70F3D3578B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B668C5-2AFB-49EB-BF5B-B70F3D3578B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B668C5-2AFB-49EB-BF5B-B70F3D3578B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

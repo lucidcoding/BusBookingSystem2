@@ -1,0 +1,48 @@
+﻿  <h1>Bookings</h1>
+  <table>
+    <thead>
+        <tr>
+            <th>
+                Start Date            
+            </th>
+            <th>
+                End Date
+            </th>
+            <th>
+                Bus
+            </th>
+            <th>
+                Destination
+            </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="booking in bookingList">
+            <td>
+                {{booking.StartDate}}
+            </td>
+            <td>
+                {{booking.EndDate}}
+            </td>
+            <td>
+                {{booking.Bus.Name}}
+            </td>
+            <td>
+                {{booking.Destination}}
+            </td>
+            <td>
+                <a href="#/booking/view/{{booking.Id}}">
+	  	            View
+	            </a> |
+                <a href="#/booking/edit/{{booking.Id}}">
+	  	            Edit
+	            </a>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+  <a href="#/booking/add">
+    Add
+  </a>

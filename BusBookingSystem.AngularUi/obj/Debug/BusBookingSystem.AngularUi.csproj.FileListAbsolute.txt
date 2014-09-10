@@ -1,0 +1,4 @@
+C:\Code\BusBookingSystem\BusBookingSystem.AngularUi\bin\BusBookingSystem.AngularUi.dll
+C:\Code\BusBookingSystem\BusBookingSystem.AngularUi\bin\BusBookingSystem.AngularUi.pdb
+C:\Code\BusBookingSystem\BusBookingSystem.AngularUi\obj\Debug\BusBookingSystem.AngularUi.dll
+C:\Code\BusBookingSystem\BusBookingSystem.AngularUi\obj\Debug\BusBookingSystem.AngularUi.pdb

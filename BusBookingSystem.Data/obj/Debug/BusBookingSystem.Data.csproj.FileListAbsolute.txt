@@ -1,0 +1,13 @@
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\BusBookingSystem.Data.dll
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\BusBookingSystem.Data.pdb
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\BusBookingSystem.Domain.dll
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\MongoDB.Bson.dll
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\MongoDB.Driver.dll
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\BusBookingSystem.Domain.pdb
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\MongoDB.Bson.xml
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\MongoDB.Driver.xml
+C:\Code\BusBookingSystem\BusBookingSystem.Data\obj\Debug\BusBookingSystem.Data.csprojResolveAssemblyReference.cache
+C:\Code\BusBookingSystem\BusBookingSystem.Data\obj\Debug\BusBookingSystem.Data.dll
+C:\Code\BusBookingSystem\BusBookingSystem.Data\obj\Debug\BusBookingSystem.Data.pdb
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\Ninject.dll
+C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\Ninject.xml

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="145b3de3-b4ac-4a29-b757-f1c162184a0d" name="Paul@LUCIDITYPC 2014-09-09 10:02:22" runUser="LucidityPc\Paul" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0ee2c309-c848-4e01-858f-39ebbd0da8aa">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Paul_LUCIDITYPC 2014-09-09 10_02_22">
+      <DeploymentItem filename="C:\Code\BusBookingSystem\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll" />
+      <DeploymentItem filename="C:\Code\BusBookingSystem\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll" />
+      <DeploymentItem filename="C:\Code\BusBookingSystem\BusBookingSystem.Data\bin\Debug\BusBookingSystem.Data.dll" />
+      <DeploymentItem filename="C:\Code\BusBookingSystem\BusBookingSystem.Domain\bin\Debug\BusBookingSystem.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-09-09T10:02:22.6170236+01:00" queuing="2014-09-09T10:02:23.3276890+01:00" start="2014-09-09T10:02:23.4027571+01:00" finish="2014-09-09T10:02:31.7752983+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="LUCIDITYPC" outcome="Error" timestamp="2014-09-09T10:02:31.7752983+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CanGetBusses" storage="c:\code\busbookingsystem\busbookingsystem.data.tests\bin\debug\busbookingsystem.data.tests.dll" id="6894f59a-dbe5-a5cf-e884-f6c79b427ddb">
+      <Execution id="47e3b7f0-09ff-46b8-9a92-eeb39b85b62d" />
+      <TestMethod codeBase="C:/Code/BusBookingSystem/BusBookingSystem.Data.Tests/bin/Debug/BusBookingSystem.Data.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusBookingSystem.Data.Tests.BusTests, BusBookingSystem.Data.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanGetBusses" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6894f59a-dbe5-a5cf-e884-f6c79b427ddb" executionId="47e3b7f0-09ff-46b8-9a92-eeb39b85b62d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="47e3b7f0-09ff-46b8-9a92-eeb39b85b62d" testId="6894f59a-dbe5-a5cf-e884-f6c79b427ddb" testName="CanGetBusses" computerName="LUCIDITYPC" duration="00:00:08.2857790" startTime="2014-09-09T10:02:23.4895193+01:00" endTime="2014-09-09T10:02:31.7752983+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47e3b7f0-09ff-46b8-9a92-eeb39b85b62d">
+    </UnitTestResult>
+  </Results>
+</TestRun>
