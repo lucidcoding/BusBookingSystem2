@@ -1,5 +1,9 @@
 ﻿angular.module('busBookingSystemApp', [
   'busBookingSystemApp.controllers',
+  'busBookingSystemApp.bookingIndexController',
+  'busBookingSystemApp.bookingViewController',
+  'busBookingSystemApp.bookingAddController',
+  'busBookingSystemApp.bookingEditController',
   'busBookingSystemApp.services',
   'ngRoute'
 ]).

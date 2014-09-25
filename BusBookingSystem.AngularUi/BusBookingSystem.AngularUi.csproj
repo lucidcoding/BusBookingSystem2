@@ -105,6 +105,10 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Controllers\Booking\addController.js" />
+    <Content Include="Controllers\Booking\editController.js" />
+    <Content Include="Controllers\Booking\indexController.js" />
+    <Content Include="Controllers\Booking\viewController.js" />
     <Content Include="index.html" />
     <Content Include="Partials\Booking\addEdit.html" />
     <Content Include="Partials\Booking\view.html" />
