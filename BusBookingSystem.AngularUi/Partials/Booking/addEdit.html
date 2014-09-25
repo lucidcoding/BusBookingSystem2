@@ -3,8 +3,8 @@
         <h1>Booking</h1>
         <p>
             <input type="hidden" id="bookingId" ng-model="id" /><br />
-            Start Date: <input type="text" id="startDate" ng-model="startDate" /><br />
-            End Date: <input type="text" id="endDate" ng-model="endDate" /><br />
+            Start Date: <input type="text" id="startDate" datepicker ng-model="startDate" /><br />
+            End Date: <input type="text" id="endDate" datepicker ng-model="endDate" /><br />
             Bus: <select ng-model="bus" ng-options="bus.Name for bus in busses track by bus.Id"></select><br />
             Destination:<input type="text" id="destination" ng-model="destination" /><br />
             <b>Total Cost:</b>£<br />
