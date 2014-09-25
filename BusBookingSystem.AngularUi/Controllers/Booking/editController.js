@@ -13,8 +13,11 @@ controller('bookingEditController', function ($scope, $routeParams, bookingServi
 
     bookingService.getById($scope.id).
     success(function (response) {
-        $scope.startDate = response.StartDate;
-        $scope.endDate = response.EndDate;
+        var datStartDate = new Date(response.StartDate);
+        var datEndDate = new Date(response.EndDate);
+
+        $scope.startDate = $.datepicker.formatDate('dd/mm/yy', datStartDate);
+        $scope.endDate = $.datepicker.formatDate( 'dd/mm/yy', datEndDate);
         $scope.destination = response.Destination;
         $scope.bus = response.Bus;
         $scope.customers = response.Customers;
