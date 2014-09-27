@@ -18,6 +18,9 @@ controller('bookingEditController', function ($scope, $routeParams, bookingServi
 
         $scope.startDate = $.datepicker.formatDate('dd/mm/yy', datStartDate);
         $scope.endDate = $.datepicker.formatDate( 'dd/mm/yy', datEndDate);
+
+        //$scope.startDate = new Date(response.StartDate);
+        //$scope.endDate = new Date(response.EndDate);
         $scope.destination = response.Destination;
         $scope.bus = response.Bus;
         $scope.customers = response.Customers;
@@ -44,8 +47,8 @@ controller('bookingEditController', function ($scope, $routeParams, bookingServi
     $scope.submit = function () {
         var data = {
             Id: $scope.id,
-            StartDate: $scope.startDate,
-            EndDate: $scope.endDate,
+            StartDate: $.datepicker.parseDate("dd/mm/yy", $scope.startDate),
+            EndDate: $.datepicker.parseDate("dd/mm/yy", $scope.endDate),
             BusId: $scope.bus.Id,
             Destination: $scope.destination,
             Customers: $scope.customers

@@ -25,8 +25,8 @@ controller('bookingAddController', function ($scope, $routeParams, bookingServic
 
     $scope.submit = function () {
         var data = {
-            StartDate: $scope.startDate,
-            EndDate: $scope.endDate,
+            StartDate: $.datepicker.parseDate("dd/mm/yy", $scope.startDate),
+            EndDate: $.datepicker.parseDate("dd/mm/yy", $scope.endDate),
             BusId: $scope.bus.Id,
             Destination: $scope.destination,
             Customers: $scope.customers

@@ -109,6 +109,7 @@
     <Content Include="Controllers\Booking\editController.js" />
     <Content Include="Controllers\Booking\indexController.js" />
     <Content Include="Controllers\Booking\viewController.js" />
+    <Content Include="Content\jasmine.css" />
     <Content Include="index.html" />
     <Content Include="Partials\Booking\addEdit.html" />
     <Content Include="Partials\Booking\view.html" />
@@ -413,6 +414,8 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\jasmine-html.js" />
+    <Content Include="Scripts\jasmine.js" />
     <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.4.js" />
     <Content Include="Scripts\jquery-1.4.4.min.js" />
@@ -422,6 +425,8 @@
     <Content Include="Scripts\utils.js" />
     <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="test.html" />
+    <Content Include="Tests\first.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

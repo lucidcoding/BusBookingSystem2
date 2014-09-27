@@ -6,3 +6,4 @@ C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.AngularUi\bin\BusBo
 C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.AngularUi\bin\BusBookingSystem.AngularUi.pdb
 C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.AngularUi\obj\Debug\BusBookingSystem.AngularUi.dll
 C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.AngularUi\obj\Debug\BusBookingSystem.AngularUi.pdb
+C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.AngularUi\obj\Debug\BusBookingSystem.AngularUi.csprojResolveAssemblyReference.cache
