@@ -1,0 +1,87 @@
+﻿@model BusBookingSystem.MvcHtml5.ViewModels.Booking.CreateViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<article>
+    <h2>Create</h2>
+
+    @using (Html.BeginForm("Create1", "Booking")) {
+        @Html.ValidationSummary(true)
+
+        <fieldset>
+            <legend>CreateViewModel</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.StartDate)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.StartDate, new { type = "date" })
+                @Html.ValidationMessageFor(model => model.StartDate)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.EndDate)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.EndDate, new { type = "date" })
+                @Html.ValidationMessageFor(model => model.EndDate)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Destination)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.Destination, new { list="destinations", autocomplete="on" })
+                @Html.ValidationMessageFor(model => model.Destination)
+                <datalist id="destinations">
+		            <option>Peak District</option>
+		            <option>Lake District</option>
+		            <option>North Wales</option>
+		            <option>Yorkshire Dales</option>
+	            </datalist>
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.BusId)
+            </div>
+            <div class="editor-field">
+                @Html.DropDownListFor(model => model.BusId, Model.BusOptions)
+                @Html.ValidationMessageFor(model => model.BusId)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.FirstName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Surname)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Surname)
+                @Html.ValidationMessageFor(model => model.Surname)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.NumberOfPassengers)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.NumberOfPassengers, new { type = "number", min = "1", max = "5", required = "required" })
+                @Html.ValidationMessageFor(model => model.NumberOfPassengers)
+            </div>
+
+            <p>
+                <input type="submit" value="Create1" />
+                <input type="submit" value="Create2" formnovalidate formaction='@Url.Action("Create2", "Booking", null)' />
+            </p>
+
+        </fieldset>
+    }
+
+</article>
+

@@ -2,3 +2,7 @@ C:\Code\BusBookingSystem\BusBookingSystem.Domain\bin\Debug\BusBookingSystem.Doma
 C:\Code\BusBookingSystem\BusBookingSystem.Domain\bin\Debug\BusBookingSystem.Domain.pdb
 C:\Code\BusBookingSystem\BusBookingSystem.Domain\obj\Debug\BusBookingSystem.Domain.dll
 C:\Code\BusBookingSystem\BusBookingSystem.Domain\obj\Debug\BusBookingSystem.Domain.pdb
+C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.Domain\bin\Debug\BusBookingSystem.Domain.dll
+C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.Domain\bin\Debug\BusBookingSystem.Domain.pdb
+C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.Domain\obj\Debug\BusBookingSystem.Domain.dll
+C:\Code\BusBookingSystem2\BusBookingSystem2\BusBookingSystem.Domain\obj\Debug\BusBookingSystem.Domain.pdb
