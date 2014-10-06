@@ -110,6 +110,7 @@
     <Content Include="Controllers\Booking\indexController.js" />
     <Content Include="Controllers\Booking\viewController.js" />
     <Content Include="Content\jasmine.css" />
+    <Content Include="Controllers\MainController.js" />
     <Content Include="index.html" />
     <Content Include="Partials\Booking\addEdit.html" />
     <Content Include="Partials\Booking\view.html" />
