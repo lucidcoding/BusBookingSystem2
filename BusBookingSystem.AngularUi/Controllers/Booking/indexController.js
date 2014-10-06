@@ -10,9 +10,3 @@ controller('bookingIndexController', function ($scope, bookingService) {
         alert('error: ' + status);
     });
 });
-
-//angular.module('busBookingSystemApp.bookingIndexController', []).
-//controller('bookingIndexController', function ($scope) {
-//    $scope.bookingList = [];
-
-//});
