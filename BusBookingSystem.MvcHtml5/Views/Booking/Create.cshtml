@@ -1,87 +1,86 @@
 ﻿@model BusBookingSystem.MvcHtml5.ViewModels.Booking.CreateViewModel
-
 @{
     ViewBag.Title = "Create";
 }
-
 <article>
     <h2>Create</h2>
-
-    @using (Html.BeginForm("Create1", "Booking")) {
+    <div class="container" style="width:800px;border-color: black; border-width: 1px; border-style: solid">
+    @using (Html.BeginForm("Create1", "Booking", FormMethod.Post, new { role = "form", @class = "form-horizontal" }))
+    {
         @Html.ValidationSummary(true)
 
-        <fieldset>
-            <legend>CreateViewModel</legend>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.StartDate)
-            </div>
-            <div class="editor-field">
-                @Html.TextBoxFor(model => model.StartDate, new { type = "date" })
-                @Html.ValidationMessageFor(model => model.StartDate)
+            <div class="form-group">
+                @Html.LabelFor(model => model.StartDate, new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.StartDate, new { type = "date", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.StartDate)
+                </div>
             </div>
 
-            <div class="editor-label">
-                @Html.LabelFor(model => model.EndDate)
-            </div>
-            <div class="editor-field">
-                @Html.TextBoxFor(model => model.EndDate, new { type = "date" })
-                @Html.ValidationMessageFor(model => model.EndDate)
-            </div>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.Destination)
-            </div>
-            <div class="editor-field">
-                @Html.TextBoxFor(model => model.Destination, new { list="destinations", autocomplete="on" })
-                @Html.ValidationMessageFor(model => model.Destination)
-                <datalist id="destinations">
-		            <option>Peak District</option>
-		            <option>Lake District</option>
-		            <option>North Wales</option>
-		            <option>Yorkshire Dales</option>
-	            </datalist>
+            <div class="form-group">
+                @Html.LabelFor(model => model.EndDate, new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.EndDate, new { type = "date", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.EndDate)
+                </div>
             </div>
 
-            <div class="editor-label">
-                @Html.LabelFor(model => model.BusId)
-            </div>
-            <div class="editor-field">
-                @Html.DropDownListFor(model => model.BusId, Model.BusOptions)
-                @Html.ValidationMessageFor(model => model.BusId)
-            </div>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.FirstName)
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.FirstName)
-                @Html.ValidationMessageFor(model => model.FirstName)
+            <div class="form-group">
+                @Html.LabelFor(model => model.Destination, new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Destination, new { list = "destinations", autocomplete = "on", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Destination)
+                    <datalist id="destinations">
+		                <option>Peak District</option>
+		                <option>Lake District</option>
+		                <option>North Wales</option>
+		                <option>Yorkshire Dales</option>
+	                </datalist>
+                </div>
             </div>
 
-            <div class="editor-label">
-                @Html.LabelFor(model => model.Surname)
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.Surname)
-                @Html.ValidationMessageFor(model => model.Surname)
-            </div>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.NumberOfPassengers)
-            </div>
-            <div class="editor-field">
-                @Html.TextBoxFor(model => model.NumberOfPassengers, new { type = "number", min = "1", max = "5", required = "required" })
-                @Html.ValidationMessageFor(model => model.NumberOfPassengers)
+            <div class="form-group">
+                @Html.LabelFor(model => model.BusId, new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.DropDownListFor(model => model.BusId, Model.BusOptions, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.BusId)
+                </div>
             </div>
 
-            <p>
-                <input type="submit" value="Create1" />
-                <input type="submit" value="Create2" formnovalidate formaction='@Url.Action("Create2", "Booking", null)' />
-            </p>
+            <div class="form-group">
+                @Html.LabelFor(model => model.FirstName, new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.FirstName)
+                </div>
+            </div>
 
-        </fieldset>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Surname, new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Surname, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Surname)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NumberOfPassengers, new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.NumberOfPassengers, new { type = "number", min = "1", max = "5", required = "required", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.NumberOfPassengers)
+                </div>
+            </div>
+
+            <div class="form-group"> 
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" value="Create1" class="btn btn-default"/>
+                    <input type="submit" value="Create2" formnovalidate formaction='@Url.Action("Create2", "Booking", null)' class="btn"/>
+                </div>
+            </div>
+        
+            
+
     }
+    </div>
 
 </article>
-

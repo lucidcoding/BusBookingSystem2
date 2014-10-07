@@ -7,45 +7,84 @@
 <article>
     <h2>Index</h2>
 
-
-    <table>
-        <tr>
-            <th>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-3">
                 @Html.DisplayNameFor(model => model.StartDate)
-            </th>
-            <th>
+            </div>
+            <div class="col-lg-3">
                 @Html.DisplayNameFor(model => model.EndDate)
-            </th>
-            <th>
+            </div>
+            <div class="col-lg-3">
                 @Html.DisplayNameFor(model => model.Destination)
-            </th>
-            <th>
+            </div>
+            <div class="col-lg-3">
                 @Html.DisplayNameFor(model => model.BusName)
-            </th>
-            <th></th>
-        </tr>
+            </div>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-lg-3">
+                    @Html.DisplayFor(model => item.StartDate)
+                </div>
+                <div class="col-lg-3">
+                    @Html.DisplayFor(model => item.EndDate)
+                </div>
+                <div class="col-lg-3">
+                    @Html.DisplayFor(model => item.Destination)
+                </div>
+                <div class="col-lg-3">
+                    @Html.DisplayFor(model => item.BusName)
+                </div>
+            </div>
+        }
+    </div>
 
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Destination)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BusName)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-    }
+    <br />
 
-    </table>
+    <div class="table-responsive"> 
+        <table  class="table table-striped table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EndDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Destination)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BusName)
+                </th>
+                <th></th>
+            </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Destination)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BusName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+
+        </table>
+    </div>
 </article>
+

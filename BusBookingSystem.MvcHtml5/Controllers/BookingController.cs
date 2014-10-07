@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using BusBookingSystem.Domain.RepositoryContracts;
 using BusBookingSystem.MvcHtml5.ViewModels.Booking;
+using BusBookingSystem.Domain.ParameterSets;
+using BusBookingSystem.Domain.Entities;
 
 namespace BusBookingSystem.MvcHtml5.Controllers
 {
@@ -47,13 +49,22 @@ namespace BusBookingSystem.MvcHtml5.Controllers
         [HttpPost]
         public ActionResult Create1(CreateViewModel viewModel)
         {
-            return View("Done!");
+            var request = new MakeEditBookingParameterSet();
+            request.StartDate = viewModel.StartDate;
+            request.EndDate = viewModel.EndDate;
+            request.Destination = viewModel.Destination;
+            request.Bus = _busRepository.GetById(viewModel.BusId);
+            request.Customers = new List<Customer>();
+            request.Customers.Add(new Customer { Id = Guid.NewGuid(), FirstName = viewModel.FirstName, Surname = viewModel.Surname });
+            var booking = Booking.Make(request);
+            _bookingRepository.Save(booking);
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
         public ActionResult Create2(CreateViewModel viewModel)
         {
-            return View("Done!");
+            throw new NotImplementedException();
         }
     }
 }
